@@ -7,10 +7,20 @@ $ cd abdull01 <enter my directory>
 $ ls <list in my directory>
 $ mkdir 180508_iCLIP1_DDX17 <make new directory for each new project>
 
-# How to retrieve your sequencing data:
-Open a new terminal, to to the 'staging server' where also sequencing data that has been demultiplex by Genomics are kept:
+# How to retrieve your sequencing data from cyberspace:
 $ ssh sblab-srv001
-$ ls /media/staging/ <lots of files will come up. Need to know DATE when you SEQUENCE>
-$ ls /media/staging/180301_*/ <wildcard: find any files in the directory that starts with 180301_ ,and ends with anything hence the star.>
-$ ls /media/staging/180301_*/fastq <sequencing data will be in fastq directory, so add fastq to the command. Looking for folder that starts with 180301, and for any of these folders, look for fastq folder>
+$ ls /media/staging/
+<Open a new terminal, to to the 'staging server' where also sequencing data that has been demultiplex by Genomics are kept>
+<lots of files will come up. Need to know DATE when you SEQUENCE>
+$ ls /media/staging/180301_*/ 
+<wildcard: find any files in the directory that starts with 180301_ ,and ends with anything hence the star.Do this if too lazy to go through the list of files. This will list down all folders that contain 180301 in their name>
+$ ls /media/staging/180301_*/fastq 
+<sequencing data will be in fastq directory, so add fastq to the command. Looking for folder that starts with 180301, and for any of these folders, look for fastq folder. This command will list down all files in fastq folders>
+<look for your SLX number. Copy the whole root that has your SLX. The file you want to copy to your scratchb is .fq.gz file, so put a wildcard *fq.gz>
+$ scp /media/staging/180301_NS500222_0381_HLHFJBGX5/fastq/*fq.gz clust1-headnode:/scratchb/sblab/abdull01/180508_iCLIP1_DDX17
+<above command lets the terminal to transfer ANY files ending with fq.gz from staging serve to my scratchb>
+
+#How to donwload a reference genome: 
+
+
 
