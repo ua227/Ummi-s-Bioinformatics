@@ -7,7 +7,7 @@ $ cd abdull01 <enter my directory>
 $ ls <list in my directory>
 $ mkdir 180508_iCLIP1_DDX17 <make new directory for each new project>
 
-# How to retrieve your sequencing data from cyberspace:
+# How to retrieve your sequencing data from cyberspace (DO ALL COMMANDS IN STAGING SERVER, NOT CLUSTER):
 $ ssh sblab-srv001
 $ ls /media/staging/
 <Open a new terminal, to to the 'staging server' where also sequencing data that has been demultiplex by Genomics are kept>
@@ -19,8 +19,9 @@ $ ls /media/staging/180301_*/fastq
 <look for your SLX number. Copy the whole root that has your SLX. The file you want to copy to your scratchb is .fq.gz file, so put a wildcard *fq.gz>
 $ scp /media/staging/180301_NS500222_0381_HLHFJBGX5/fastq/*fq.gz clust1-headnode:/scratchb/sblab/abdull01/180508_iCLIP1_DDX17
 <above command lets the terminal to transfer ANY files ending with fq.gz from staging serve to my scratchb>
+<scp stands for secure copy>
 
 #How to donwload a reference genome: 
-
-
+<Find reference genome online. Download reference genome to your desktop. To copy the file to your scratchb, put this code in YOUR COMPUTER TERMINAL, NOT CLUSTER>
+$ scp /Users/abdull01/desktop/GRCh38.primary_assembly.genome.fa clust1-headnode:/scratchb/sblab/abdull01/180508_iCLIP1_DDX17
 
