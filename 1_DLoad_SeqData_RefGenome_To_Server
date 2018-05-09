@@ -3,14 +3,13 @@ $ ssh abdull01@clust1-headnode.cri.camres.org
 $ cd /scratchb/sblab/
 $ ls <list directory/folders in the sblab>
 $ mkdir abdull01 <make new directory/folder for me>
-$ cd abdull01 <enter my directory>
+$ cd abredull01 <enter my directory>
 $ ls <list in my directory>
 $ mkdir 180508_iCLIP1_DDX17 <make new directory for each new project>
 
-# How to retrieve your sequencing data from cyberspace (DO ALL COMMANDS IN STAGING SERVER, NOT CLUSTER):
+# How to retrieve your sequencing data from cyberspace. Open a new terminal screen to open the 'staging server' where also sequencing data that has been demultiplex by Genomics are kept. DO ALL COMMANDS IN STAGING SERVER, NOT CLUSTER>
 $ ssh sblab-srv001
 $ ls /media/staging/
-<Open a new terminal, to to the 'staging server' where also sequencing data that has been demultiplex by Genomics are kept>
 <lots of files will come up. Need to know DATE when you SEQUENCE>
 $ ls /media/staging/180301_*/ 
 <wildcard: find any files in the directory that starts with 180301_ ,and ends with anything hence the star.Do this if too lazy to go through the list of files. This will list down all folders that contain 180301 in their name>
