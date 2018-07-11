@@ -24,3 +24,5 @@ $ scp /media/staging/180301_NS500222_0381_HLHFJBGX5/fastq/*fq.gz clust1-headnode
 <Find reference genome online. Download reference genome to your desktop. To copy the file to your scratchb, put this code in YOUR COMPUTER TERMINAL, NOT CLUSTER>
 $ scp /Users/abdull01/desktop/GRCh38.primary_assembly.genome.fa clust1-headnode:/scratchb/sblab/abdull01/180508_iCLIP1_DDX17
 
+#How to de-multiplex:
+
