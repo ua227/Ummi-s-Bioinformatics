@@ -1,0 +1,10 @@
+How to copy files/folders from the cluster to your own computer:
+# Go to COMPUTER TERMINAL (not cluster!)
+$ scp CLUSTER(SOURCE) COMPUTER_TERMINAL(LOCATION)
+# scp abdull01@clust1-headnode.cri.camres.org:/scratchb/sblab/abdull01/180823_iCLIP2_DDX17/*.bedgraph /Users/abdull01/Desktop/
+*In example above, I copied all files ending with .bedgraph from the cluster to my desktop 
+
+How to copy files/folders from cluster to cluster:
+# Log in to cluster
+$ scp /scratcha/sblab/varshn01/ummi_DDX17_iCLIP/bam/*.bedgraph /scratchb/sblab/abdull01/180823_iCLIP2_DDX17
+I copied all files ending with *.bedgraph in Dhaval space to a folder in my space. 
