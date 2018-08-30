@@ -8,3 +8,7 @@ How to copy files/folders from cluster to cluster:
 # Log in to cluster
 $ scp /scratcha/sblab/varshn01/ummi_DDX17_iCLIP/bam/*.bedgraph /scratchb/sblab/abdull01/180823_iCLIP2_DDX17
 I copied all files ending with *.bedgraph in Dhaval space to a folder in my space. 
+
+#How to donwload a reference genome (from terminal to cluster):
+<Find reference genome online. Download reference genome to your desktop. To copy the file to your scratchb, put this code in YOUR COMPUTER TERMINAL, NOT CLUSTER>
+$ scp /Users/abdull01/desktop/GRCh38.primary_assembly.genome.fa clust1-headnode:/scratchb/sblab/abdull01/180508_iCLIP1_DDX17
