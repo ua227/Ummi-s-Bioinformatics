@@ -1,0 +1,8 @@
+# How to log in to the cluster, type:
+$ ssh abdull01@clust1-headnode.cri.camres.org 
+$ cd /scratchb/sblab/
+$ ls <list directory/folders in the sblab>
+$ mkdir abdull01 <make new directory/folder for me>
+$ cd abdull01 <enter my directory>
+$ ls <list in my directory>
+$ mkdir 180508_iCLIP1_DDX17 <make new directory for each new project>
